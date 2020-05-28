@@ -1,0 +1,18 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/TAEHUI LEE/CLionProjects/20200516_사탕게임/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_71810/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_71810.dir\build.make CMakeFiles/cmTC_71810.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/TAEHUI LEE/CLionProjects/20200516_사탕게임/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71810.dir/testCCompiler.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_71810.dir\testCCompiler.c.obj   -c "C:\Users\TAEHUI LEE\CLionProjects\20200516_?ы깢寃뚯엫\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c"
+gcc.exe: error: C:\Users\TAEHUI LEE\CLionProjects\20200516_?ы깢寃뚯엫\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: Invalid argument
+gcc.exe: fatal error: no input files
+compilation terminated.
+CMakeFiles\cmTC_71810.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_71810.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_71810.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/TAEHUI LEE/CLionProjects/20200516_사탕게임/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_71810/fast' failed
+mingw32-make.exe: *** [cmTC_71810/fast] Error 2
+
+
+
