@@ -18,7 +18,7 @@ void bfs(int x, int y){
     while(!q.empty()){
         int nowx = q.front().first;
         int nowy = q.front().second;
-        q.pop();
+        q.pop();a
         for(int k=0; k<8; k++){
             int nx = nowx + goA[k];
             int ny = nowy + goB[k];
