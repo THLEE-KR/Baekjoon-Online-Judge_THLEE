@@ -1,25 +1,36 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string>
 using namespace std;
 
-void go(vector<char>& v, vector<char>& ans, int now, int goal){
-    ans.push_back(v[now]);
+bool check(string &password){
+    int cnt_ja = 0;
+    int cnt_mo = 0;
+    for(int i=0; i<password.size(); i++){
+        if(password[i] == 'a' || password[i] == 'e' || password[i] == 'i' ||
+                password[i] == 'o' || password[i] == 'u' )
+            cnt_mo++;
+        else
+            cnt_ja++;
+    }
+    if(cnt_ja >=2 && cnt_mo >= 1)
+        return true;
+    else
+        return false;
 
-    if(ans.size() == goal){
-        for(int i=0; i<ans.size(); i++){
-            cout << ans[i];
-        }
-        cout << '\n';
+}
+
+void go(int length, vector<char> &v, string password, int i){
+    if(password.length() == length){
+        if(check(password))
+            cout << password << '\n';
         return;
     }
-    if(now >= v.size())
+    if(i == v.size())
         return;
-
-    for(int i=now+1; i<goal; i++){
-        go(v, ans, i, goal);
-    }
-    return;
+    go(length, v, password+v[i], i+1);
+    go(length, v, password, i+1);
 }
 
 int main() {
@@ -31,9 +42,9 @@ int main() {
         cin >> v[i];
     }
     sort(v.begin(), v.end());
-    vector<char> ans;
-    for(int i=0; i<n; i++)
-        go(v, ans, i, r);
+
+    string password = "";
+    go(r, v, password, 0);
 
     return 0;
 }

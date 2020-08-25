@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/TAEHUI LEE/CLionProjects/20200824_1759/main.cpp
+C:/Users/TAEHUI LEE/CLionProjects/20200825_14501/main.cpp
 iostream
 -
 vector
 -
 algorithm
--
-string
 -
 
